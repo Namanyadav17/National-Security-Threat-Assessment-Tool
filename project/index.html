@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Security Threat System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#threats">Threats</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="home" class="section">
+        <h1>National Security Threat System</h1>
+        <p>Welcome to the National Security Threat System. Stay informed about potential threats to national security.</p>
+    </div>
+
+    <div id="threats" class="section">
+        <h2>Current Threats</h2>
+
+        <!-- Form to Add a New Threat -->
+        <div class="form-container">
+            <input type="text" id="threat-name" placeholder="Enter threat name">
+            <input type="text" id="threat-severity" placeholder="Enter severity (e.g., High, Medium, Low)">
+            <button onclick="addThreat()">Add Threat</button>
+        </div>
+
+        <!-- Threat List -->
+        <table id="threats-table">
+            <thead>
+                <tr>
+                    <th>Threat</th>
+                    <th>Severity</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="threats-body">
+                <!-- Threat rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="analysis" class="section">
+        <h2>Threat Analysis</h2>
+        <button onclick="showThreatAnalysis()">Analyze Threats</button>
+        <p id="threat-details" class="hidden">Analyzing ongoing threats...</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>If you have any information or inquiries, please contact us at <a href="mailto:security@example.com">security@example.com</a>.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

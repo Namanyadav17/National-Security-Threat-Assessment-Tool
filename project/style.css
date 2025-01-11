@@ -1,0 +1,191 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light pastel blue */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #A2C8E5; /* Light blue */
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Rounded navbar */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    flex: 1;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 18px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 8px; /* Rounded corners for navbar items */
+}
+
+.navbar ul li a:hover {
+    background-color: #66A3D2; /* Medium blue on hover */
+}
+
+/* Section Styling */
+.section {
+    padding: 30px;
+    margin: 20px auto;
+    background-color: #FFFFFF; /* White background for sections */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+}
+
+h2 {
+    color: #4C8C99; /* Soft blue for headings */
+    margin-bottom: 20px;
+}
+
+/* Form Container Styling */
+.form-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #A2C8E5; /* Light blue border */
+    border-radius: 8px;
+    width: 250px;
+    transition: border 0.3s;
+    background-color: #E6F4FA; /* Very light blue background for inputs */
+}
+
+input[type="text"]:focus {
+    border-color: #66A3D2; /* Medium blue focus border */
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #66C2FF; /* Soft sky blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4DB8FF; /* Darker sky blue on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 14px 20px;
+    text-align: left;
+    border: 1px solid #CCE7FF; /* Light blue border */
+}
+
+th {
+    background-color: #E6F4FA; /* Light blue background for headers */
+    font-weight: bold;
+}
+
+td {
+    background-color: #F0F8FF; /* Light pastel blue for table rows */
+}
+
+td:nth-child(even) {
+    background-color: #E0F1FF; /* Lighter pastel blue for alternating rows */
+}
+
+.status {
+    font-weight: bold;
+}
+
+.critical {
+    color: #FF6347; /* Tomato red for critical status */
+}
+
+.warning {
+    color: #FFA500; /* Orange for warning status */
+}
+
+/* Hidden Details */
+.hidden {
+    display: none;
+}
+
+/* Button (Edit/Delete) Styling */
+button.edit, button.delete {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-right: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.edit {
+    background-color: #A2C8E5; /* Light blue for edit */
+    border: none;
+}
+
+button.edit:hover {
+    background-color: #66A3D2; /* Medium blue on hover */
+}
+
+button.delete {
+    background-color: #FF8C00; /* Orange for delete */
+    border: none;
+}
+
+button.delete:hover {
+    background-color: #FF6347; /* Tomato red on hover */
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
